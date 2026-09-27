@@ -1,0 +1,51 @@
+---
+title: "How to Build and Simulate a Web Server in Cisco Packet Tracer"
+publishedAt: "2026-08-30"
+updatedAt: "2026-08-30"
+author: "Adhi"
+summary: "A step-by-step practical guide to simulating a basic HTTP Web Server using Cisco Packet Tracer."
+image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&h=192&fit=crop"
+---
+
+# Introduction
+
+In this post, I will share my notes on how to set up and simulate a **Simple Web Server** using **Cisco Packet Tracer**.
+
+This simulation is a great way to understand the fundamentals of client-server architecture and how the HTTP protocol operates within a local network.
+
+## Network Topology & Requirements
+
+For this basic setup, we only need a few devices:
+- **1x Server** (acts as the Web Server)
+- **1x PC / Laptop** (acts as the Client)
+- **1x Copper Cross-Over Cable** (to connect the PC directly to the Server)
+
+## Step-by-Step Configuration
+
+Step A: Configure IP Addresses
+1. Click on **PC0** -> Navigate to the **Desktop** tab -> Select **IP Configuration**.
+   - IP Address: `192.168.1.2`
+   - Subnet Mask: `255.255.255.0`
+2. Click on **Server0** -> Navigate to the **Desktop** tab -> Select **IP Configuration**.
+   - IP Address: `192.168.1.1`
+   - Subnet Mask: `255.255.255.0`
+
+
+
+
+Step B: Enable the HTTP Service
+1. Click on **Server0** -> Go to the **Services** tab -> Select **HTTP**.
+2. Ensure both **HTTP** and **HTTPS** options are toggled **On**.
+3. Locate the `index.html` file, click **edit**, and customize the HTML content.
+
+
+## Testing the Connection
+
+1. Click on PC0 -> Open the Desktop tab -> Launch Web Browser.
+
+2. Type the Server's IP address in the URL bar: http://192.168.1.1 and click Go.
+
+3. If configured correctly, the HTML page you edited on the server should display on the screen.
+## Conclusion
+
+Through this simple exercise, we demonstrate how a Web Server responds to HTTP requests sent by a client. Mastering these basics provides a solid foundation before diving into more complex networking concepts like DNS, DHCP, and Routing.

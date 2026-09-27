@@ -1,0 +1,75 @@
+---
+title: "Ubuntu CLI Basics: Essential Terminal Commands for Beginners"
+publishedAt: "2026-09-27"
+updatedAt: "2026-09-27"
+author: "Adhi"
+summary: "Essential TypeScript patterns and practices that will make your codebase more robust and easier to maintain."
+image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=192&fit=crop"
+---
+
+# Introduce
+
+For some people, opening the Ubuntu terminal with its black screen and white text can feel intimidating. However, using the Command Line Interface (CLI) is much faster, lighter, and more efficient than relying solely on a graphical user interface (GUI).
+
+In this article, we will cover the essential Ubuntu terminal commands every beginner should know to start their journey as a confident Linux user.
+
+<MediaContainer
+  src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2021/09/linux-terminal-ubuntu-sudo.jpg"
+  alt="TypeScript code on screen"
+/>
+
+## Directory Navigation (Moving Around Folders)
+
+When you first open the terminal, you start in your Home directory. Here is how to navigate and view your files:
+
+- pwd (Print Working Directory): Displays the full path of the folder you are currently in.
+
+- ls (List): Lists all files and folders in the current directory.
+
+Pro Tip: Use ls -la to view hidden files along with their permissions and details.
+
+- cd [folder_name] (Change Directory): Moves into a specific folder. Example: cd Documents.
+
+Pro Tip: Type cd .. to go back one level to the parent directory.
+
+## Managing Files and Folders
+
+Once you know how to navigate, it is time to learn how to create, copy, and delete files or folders:
+
+- mkdir [folder_name]: Creates a brand-new folder. Example: mkdir learn-ubuntu.
+
+- touch [file_name]: Creates a new, empty file. Example: touch notes.txt.
+
+- cp [source] [destination]: Copies a file or folder.
+
+- mv [source] [destination]: Moves or renames a file or folder.
+
+- rm [file_name]: Deletes a file.
+
+Warning: Be very careful with rm -rf [folder_name], as this command permanently deletes the folder and all its contents without sending them to the Trash.
+
+## Package and App Management (apt)
+
+- Ubuntu uses the apt package manager to install, update, and remove applications directly from the terminal:
+
+- sudo apt update: Refreshes the list of available software packages from the official repositories.
+
+- sudo apt upgrade: Installs updates for all installed applications on your system.
+
+- sudo apt install [app_name]: Installs a new application. Example: sudo apt install git.
+
+- sudo apt remove [app_name]: Uninstalls an application from your system.
+
+## Monitoring System and Processes
+
+Want to check your RAM usage, CPU, or active background processes? Use these commands:
+
+-  top or htop: Displays system resource usage in real-time.
+
+-  df -h: Checks available disk storage space (HDD/SSD).
+
+-  free -h: Checks current RAM memory usage.
+
+### Conclusion
+
+Proficiency in the command line interface is an indispensable skill for any Linux user, system administrator, or developer. While the transition from a graphical user interface may present an initial learning curve, the efficiency, precision, and control offered by the terminal significantly enhance overall system management. We encourage you to incorporate these foundational commands into your daily workflow to build confidence and deeper technical competence within the Ubuntu environment.

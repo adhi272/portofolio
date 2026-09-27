@@ -1,0 +1,84 @@
+---
+title: "How to Install Ubuntu"
+publishedAt: "2026-09-21"
+updatedAt: "2026-09-21"
+author: "Adhi"
+summary: "Master Git workflows that keep your team productive and your codebase healthy."
+image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=800&h=192&fit=crop"
+---
+
+# Introduce
+
+The operating system is one of the four main components of a computer system, serving as an intermediary between the user (brainware) and the hardware. The purpose of an operating system is to provide convenience for users in operating the computer and to improve the efficiency of system resource utilization (Yunianto & Adhiyarta, 2020). In addition, the operating system is responsible for managing program execution, memory allocation, file management, and controlling input and output devices.
+
+One of the widely used types of operating systems today is Linux, a Unix-type, open-source operating system based on the Linux kernel first developed by Linus Torvalds in 1991. Due to its open nature, the source code of Linux can be freely accessed, modified, and distributed by developers worldwide. Among the various existing Linux distributions, Ubuntu is one of the most popular. Developed by Canonical Ltd. and based on Debian, Ubuntu is designed with the principle of ease of use for both novice and professional users, providing support for both graphical and command-line interfaces.
+
+When interacting with a Linux operating system such as Ubuntu, users can utilize the Command Line Interface (CLI), which is a text-based interface used to execute commands through the terminal. The use of CLI offers more efficient, precise, and lightweight system control compared to a visual interface. To facilitate testing and learning this operating system without disrupting the host system, virtualization software such as Oracle VM VirtualBox can be used. VirtualBox allows the installation and operation of Ubuntu as a guest operating system within the host operating system in a safe and isolated manner.
+
+## Step to Install
+1. Installing Ubuntu 20.04 via VirtualBox.
+
+   a. Make sure you already have the Ubuntu 20.04 Desktop ISO file on your computer. If not, the ISO file can be downloaded from ubuntu.com.
+
+   b. Run VirtualBox to begin the Ubuntu installation.
+   ![Mulai](/open.jpeg)
+
+   c. Click New to open the Create Virtual Machine window.
+
+    - In the Name field, enter Ubuntu-YourName.
+
+    - Leave the Folder field as the destination folder path for saving the VM files. It is recommended to use a separate partition from the system drive to prevent the system storage from filling up.
+
+    - In the Type field, select Linux.
+
+    - In the Version field, select Ubuntu (64-bit).
+    ![Mulai](/A.jpeg)
+
+   d. Click Next (Guided Mode) or Hardware (Expert Mode). Next, you will be asked to configure the memory allocation. Adjust the settings by taking your computer's memory capacity into account, for example, setting it to half.
+    ![Mulai](/b.jpeg)
+
+   e. Next, you will be asked to configure the hard disk allocation.
+      ![Mulai](/c.jpeg)
+
+   f. Next, in the Hard disk file type window, select VDI (VirtualBox Disk Image). Then click Next.
+      ![Mulai](/d.jpeg)
+   g. In the Storage on physical hard disk window, select Dynamically allocated. Then click Next.
+      ![Mulai](/e.jpeg)
+   i. In the Location and size window, choose the location to create the Virtual Hard Disk or leave it as default if you do not want to change the location. The hard disk capacity can be allocated to 25.0 GB. Then click Create. The creation of the Virtual Machine is complete, but you still need to configure a few settings.
+       ![Mulai](/f.jpeg)
+   j. Click **Settings** on the main VirtualBox window.
+
+* Then, in the **General** menu, click the **Advanced** tab. For the **Shared Clipboard** and **Drag 'n' Drop** fields, select **Bidirectional**.
+* In the **System** menu, click the **Processor** tab, and set the processor count to half of the number of processors on your computer.
+![Mulai](/g.jpeg)
+
+* In the **Storage** menu, click **Controller: IDE (Empty)**. Then, in the **Optical Drive** field, select the location corresponding to your Ubuntu ISO file. Click **OK**.
+![Mulai](/h.jpeg)
+
+  k. Click **Start** on the main VirtualBox window. (experimental procedure)
+
+* Select the language, then click **Install Ubuntu**.
+![Mulai](/i.jpeg)
+
+* Select your keyboard layout. Click **Continue**.
+
+* In the **Updates and other software** window, select **Minimal installation**. Uncheck **Download updates while installing Ubuntu** and **Install third-party software**. Click **Continue**.
+
+* In the **Installation type** window, select **Erase disk and install Ubuntu**. Click **Install Now**.
+
+* In the **Where are you?** window, select your location and click **Continue**.
+![Mulai](/j.jpeg)
+
+* In the **Who are you?** window, fill in the required information. Note that you must remember the username and password that you will use later to log in to Ubuntu. Once the information is filled in, click **Continue**.
+
+* Wait for the Ubuntu installation to complete (an internet connection is required).
+
+* After the **Installation Complete** window appears, click **Restart Now**.
+
+  l. Try logging in to the newly installed Ubuntu. If there is a prompt for an Upgrade or Update, ignore it or click **Cancel**.
+   ![Mulai](/k.jpeg)
+
+
+## Conclusion
+
+Based on the practice session and the steps performed, it can be concluded that the Ubuntu operating system was successfully installed and run as a guest OS inside the host machine using Oracle VM VirtualBox. The entire configuration process—ranging from hardware resource allocation (such as RAM, processor count, and virtual hard disk capacity) to the installation stages—ensures that the virtual machine runs in a safe and isolated environment. Finally, the appearance of the Ubuntu login screen indicates that the virtual machine is fully operational and ready to be used for further exploration, such as learning system administration and utilizing the Command Line Interface (CLI) without disrupting the main host system.
