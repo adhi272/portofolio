@@ -142,7 +142,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/crypto-demo.mp4.mp4",
+      video: "/crypto-demo.mp4",
     },
     {
       title: "NaviMaps",
